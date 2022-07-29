@@ -1,0 +1,44 @@
+package Libreria;
+
+/**
+ *
+ * @author Racha
+ */
+import javax.swing.JOptionPane;
+public class Catálogo_de_Categoría_de_Productos {
+    public String nombreCategoría;
+    public String libreria;
+    public String características;
+    public char estado=' ';    
+
+    public void leerdatos(){
+      nombreCategoría=JOptionPane.showInputDialog( null,
+                "Ingrese el nombre de la categoria");
+      libreria=JOptionPane.showInputDialog( null,
+                "Ingrese el nombre de la editorial");
+      características=JOptionPane.showInputDialog( null,
+                "Cuál es el género del libro");
+      estado=JOptionPane.showInputDialog( null,
+                "Indique el estado del producto: Activo o Inactivo").toUpperCase().charAt(0);
+      
+    }
+    
+    public void editarCat(){
+        
+    }
+    public void agregarCat(){
+        
+    }
+    public void eliminarCat(){
+        
+        
+    }
+    
+    public void activarCat(){
+        
+    }
+    
+    public void inctivarCat(){
+        
+    }
+}
