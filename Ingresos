@@ -1,0 +1,31 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package libreria;
+
+/**
+ *
+ * @author Racha
+ */
+import javax.swing.JOptionPane; 
+public class Ingresos {
+    // Se heredan atributos de las clases Usuario, Catálogo_de_Emp_Clien, Cliente, Facturas
+    public double totalIngresosDiarios;
+    public int listadoDeClientes;
+    
+    
+    public double calcularIngresos(){
+        //aquí se hace el calculo de los ingresos obtenidos (por completar).
+        return totalIngresosDiarios;
+        
+    }
+    
+    public int calcularListadoClientes(){
+        // aqui se calculará la cantidad de clientes y nombre que han realizado compras (por completar)
+        return listadoDeClientes;
+    }
+       
+  
+    
+}
