@@ -1,0 +1,57 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package libreria;
+
+/**
+ *
+ * @author Racha
+ */
+import javax.swing.JOptionPane;
+public class Usuario {
+    public String nombre;
+    public String apellidos;
+    public String nickname;
+    public long password;
+    public char estado=' ';    
+   
+    public void leerDatos(){
+      nombre=JOptionPane.showInputDialog(null, 
+              "Ingrese su primer y segundo nombre: ");
+      apellidos=JOptionPane.showInputDialog(null, 
+              "Ingrese sus apellidos: ");
+      nickname=JOptionPane.showInputDialog(null, 
+              "Ingrese su nombre de usuario: ");
+      
+      password=Long.parseLong(JOptionPane.showInputDialog(null,
+              "Indique la contraseña: "));
+      
+      estado=JOptionPane.showInputDialog( null,
+                "Indique el estado del producto: Activo o Inactivo").toUpperCase().charAt(0);
+      
+      //JOptionPane.showMessageDialog(null,
+       //     "El nombre de la persona es: "+nombre+" "+apellidos+"\n"+ "La persona se registrará "
+       //             + " como:"+nickname+"\n");
+       
+        
+    }
+    public void consultarusuario(){
+        
+    }
+    
+    public void agregarusuario(){
+        
+    }
+    
+    public void inactivarusuario(){
+        
+    }
+    
+    public void activarusuario(){
+        
+    }
+    
+    
+    
+}
