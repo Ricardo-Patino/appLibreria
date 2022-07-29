@@ -1,0 +1,52 @@
+package libreria;
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Racha
+ */
+public class Main {
+    public static void main(String[] args) {
+     
+      
+        
+        Catálogo_de_Emp_Clien u1=new Catálogo_de_Emp_Clien();
+        
+        
+        
+        byte opc;
+        byte cont=1;
+
+        while (cont==1){
+        opc=Byte.parseByte(JOptionPane.showInputDialog(null, "Digite la el número correspondiente a la opción del menú a realizar:"
+                        + "\n1-"
+                        + "\n2-"
+                        + "\n3-"
+                        + "\n4-Salir del menú y programa completamente"));
+            switch (opc){
+                case 1:
+                    
+                    break;
+                case 2:
+                    
+                    break;
+                case 3:
+                    
+                    break;
+                case 4:
+                    cont=0;
+                    JOptionPane.showMessageDialog(null, "Gracias por usar nuestro programa");
+                    break;
+                default:
+                    JOptionPane.showMessageDialog(null, "La opción digitada es incorrecta");
+                    break;
+            }   
+
+            }
+
+
+}
+      
+              
+              
+    }
