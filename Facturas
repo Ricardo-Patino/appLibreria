@@ -1,0 +1,45 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package Libreria;
+
+/**
+ *
+ * @author Racha
+ */
+import javax.swing.JOptionPane;
+public class Facturas {
+
+
+
+    public String fechaVenta;
+    public String fechaFactura;
+    public float monto;
+    public boolean registrado;
+    
+   
+    public void leerdatos(){
+
+      fechaVenta=JOptionPane.showInputDialog( null,
+                "Ingrese la fecha de la venta:");
+      fechaFactura=JOptionPane.showInputDialog( null,
+                "Ingrese la fecha de la factura:");
+      
+      monto=Float.parseFloat(JOptionPane.showInputDialog(null,"Ingrese el monto total pagado:"));
+    
+      registrado=true;
+    }
+    
+    public void crearFactura(){
+    //aqui se va a jalar todos los datos del cliente y del Producto
+    }
+    public  void anularFactura(){
+        //Aqui se realiza el proceso de eliminar la facturacion
+    }
+    
+    
+    public void mostrarFactura(){
+    //Para ver e imprimir la factura
+    }
+}
