@@ -1,0 +1,65 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package libreria;
+
+/**
+ *
+ * @author Racha
+ */
+import javax.swing.JOptionPane;
+public class Catálogo_de_Emp_Clien{
+    
+    
+    public String nombre;
+    public String apellidos;
+    public String ciudad;
+    public int telefono;
+    public String direccion;
+    public String correoE;  
+    public boolean estado;
+    
+    
+    
+    public void leerDatosUsuario(String nombre){
+        this.nombre = nombre;
+        ciudad=JOptionPane.showInputDialog( null,
+                "Coloque el nombre de su ciudad");
+        telefono=Integer.parseInt(JOptionPane.showInputDialog(null,
+                "Coloque su número telefónico"));
+        direccion=JOptionPane.showInputDialog( null,
+                "Coloque su dirección");
+        correoE=JOptionPane.showInputDialog( null,
+                "Coloque su correo");
+        JOptionPane.showMessageDialog(null,
+         "El nombre es "+nombre+"\nLa ciudad donde habita es: "+ciudad+", \nDirección exacta: "+direccion+"\n"
+        +"su numero telefónico es: "+telefono+"\n"+"El correo electrónico es:"+correoE);
+}
+    
+public void editarEmpClie(){
+
+
+}
+
+public void agregarEmpClie(){
+
+
+}
+
+public void activarEmpClie(){
+
+
+}
+
+public void inactivarEmpClie(){
+
+
+}
+
+public void eliminarEmpClie(){
+
+
+}
+
+}
