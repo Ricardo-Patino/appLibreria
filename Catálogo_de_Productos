@@ -1,0 +1,69 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package Libreria;
+
+/**
+ *
+ * @author Racha
+ */
+import javax.swing.JOptionPane;
+public class Catálogo_de_Productos {
+    // Se heredan los atributos Catálogo_de_Categoría_de_Productos
+    public String idLibro;
+    public String titulo;
+    public String autor;
+    public String categoria;
+    public String descripciónDelProducto;
+    public String cantidadExistente;
+    public String precioUnitario;
+    public String fechaVencimiento;
+    public char estado=' ';
+
+
+
+    public void leerdatos(){
+      idLibro=JOptionPane.showInputDialog( null,
+                "Ingrese el ID del Libro");
+      titulo=JOptionPane.showInputDialog( null,
+                "Ingrese el nombre del libro");
+      autor=JOptionPane.showInputDialog( null,
+                "Ingrese el nombre del autor");
+      descripciónDelProducto=JOptionPane.showInputDialog( null,
+                "Ingrese la descripción del libro");
+      cantidadExistente=JOptionPane.showInputDialog( null,
+                "Cuál es el género del libro");
+      precioUnitario=JOptionPane.showInputDialog( null,
+                "Ingrese el precio de venta?");
+      fechaVencimiento=JOptionPane.showInputDialog( null,
+                "Cuál es la fecha de vencimiento?");
+      
+      estado=JOptionPane.showInputDialog( null,
+                "Indique el estado del producto: Activo o Inactivo").toUpperCase().charAt(0);
+}
+    
+    public void verificarCategoria(){
+        
+    }
+    
+    public void editarProdu(){
+            
+    }
+    
+    public void agregarProdu(){
+            
+    }
+    public void eliminarProdu(){
+        
+        
+    }
+    
+    public void activarProdu(){
+        
+    }
+    
+    public void inctivarProdu(){
+        
+    }
+}
