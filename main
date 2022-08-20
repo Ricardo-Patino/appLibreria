@@ -5,48 +5,22 @@ import javax.swing.JOptionPane;
  *
  * @author Racha
  */
-public class Main {
+public class main {
     public static void main(String[] args) {
      
+        
+        JOptionPane.showMessageDialog(null,"Bienvenidos a la librería Star");
+      JOptionPane.showMessageDialog(null,"Este programa cuenta con la dispobibilidad de afiliar:\n"
+              + "-25 usuarios clientes y 24 usuarios Empleados"
+              + "\n-Crear 9 Categorías de productos"
+              + "\n-Crear 99 Productos con cantidad existente ilimitada");
+        
+        menu u1=new menu();
+        
+        u1.menuPrincipal();
       
-        
-        Catálogo_de_Emp_Clien u1=new Catálogo_de_Emp_Clien();
-        
-        
-        
-        byte opc;
-        byte cont=1;
-
-        while (cont==1){
-        opc=Byte.parseByte(JOptionPane.showInputDialog(null, "Digite la el número correspondiente a la opción del menú a realizar:"
-                        + "\n1-"
-                        + "\n2-"
-                        + "\n3-"
-                        + "\n4-Salir del menú y programa completamente"));
-            switch (opc){
-                case 1:
-                    
-                    break;
-                case 2:
-                    
-                    break;
-                case 3:
-                    
-                    break;
-                case 4:
-                    cont=0;
-                    JOptionPane.showMessageDialog(null, "Gracias por usar nuestro programa");
-                    break;
-                default:
-                    JOptionPane.showMessageDialog(null, "La opción digitada es incorrecta");
-                    break;
-            }   
-
-            }
-
 
 }
-      
               
               
-    }
+}
